@@ -30,7 +30,12 @@
            <div class="absolute bg-circle-100 dark:bg-circleDark-100 w-60 h-60 rounded-full top-[-18px] left-[-12px] -z-10"></div>
            <div class="absolute bg-circle-200 dark:bg-circleDark-200 w-60 h-60 rounded-full bottom-[-18px] right-[-12px] -z-10"></div>
            <div class="flex flex-col p-7 rounded-3xl backdrop-blur-3xl">
-               <div class="h-32"></div>
+           <!--  ***  Result  ***  -->
+               <div class="h-32 mb-4">
+                   <input class="outline-none border-none bg-white h-20 w-full" type="text" name="numbers" id="numbers">
+                   <div class="bg-white h-10 w-full"></div>
+               </div>
+           <!--  ***  Signs  ***  -->
                <div>
                    <div class="flex items-center gap-x-4 mb-4">
                        <div class="toggleTheme flex items-center justify-center w-12 h-6 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl cursor-pointer hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550">
@@ -56,52 +61,52 @@
                            </svg>
                        </span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-300 dark:bg-darkBlue-350 rounded-xl hover:bg-lightBlue-650 dark:hover:bg-darkBlue-600 cursor-pointer">
+                       <div onclick="display('/')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-300 dark:bg-darkBlue-350 rounded-xl hover:bg-lightBlue-650 dark:hover:bg-darkBlue-600 cursor-pointer">
                            <span class="text-lightBlue-350 dark:text-darkBlue-400">/</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12  bg-lightBlue-300 dark:bg-darkBlue-350 rounded-xl hover:bg-lightBlue-650 dark:hover:bg-darkBlue-600 cursor-pointer">
+                       <div onclick="display('*')" class="flex items-center justify-center w-12 h-12  bg-lightBlue-300 dark:bg-darkBlue-350 rounded-xl hover:bg-lightBlue-650 dark:hover:bg-darkBlue-600 cursor-pointer">
                            <span class="text-lightBlue-350 dark:text-darkBlue-400 h-6">*</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
+                       <div onclick="display('7')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
                            <span class="text-lightBlue-200 dark:text-darkBlue-250">7</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
+                       <div onclick="display('8')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
                            <span class="text-lightBlue-200 dark:text-darkBlue-250">8</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
+                       <div onclick="display('9')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
                            <span class="text-lightBlue-200 dark:text-darkBlue-250">9</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-300 dark:bg-darkBlue-350 rounded-xl hover:bg-lightBlue-650 dark:hover:bg-darkBlue-600 cursor-pointer">
+                       <div onclick="display('-')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-300 dark:bg-darkBlue-350 rounded-xl hover:bg-lightBlue-650 dark:hover:bg-darkBlue-600 cursor-pointer">
                            <span class="text-lightBlue-350 dark:text-darkBlue-400">-</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
+                       <div onclick="display('4')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
                            <span class="text-lightBlue-200 dark:text-darkBlue-250">4</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
+                       <div onclick="display('5')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
                            <span class="text-lightBlue-200 dark:text-darkBlue-250">5</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
+                       <div onclick="display('6')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
                            <span class="text-lightBlue-200 dark:text-darkBlue-250">6</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-300 dark:bg-darkBlue-350 rounded-xl hover:bg-lightBlue-650 dark:hover:bg-darkBlue-600 cursor-pointer">
+                       <div onclick="display('+')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-300 dark:bg-darkBlue-350 rounded-xl hover:bg-lightBlue-650 dark:hover:bg-darkBlue-600 cursor-pointer">
                            <span class="text-lightBlue-350 dark:text-darkBlue-400">+</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
+                       <div onclick="display('1')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
                            <span class="text-lightBlue-200 dark:text-darkBlue-250">1</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
+                       <div onclick="display('2')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
                            <span class="text-lightBlue-200 dark:text-darkBlue-250">2</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
+                       <div onclick="display('3')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
                            <span class="text-lightBlue-200 dark:text-darkBlue-250">3</span>
                        </div>
-                       <div class="flex items-center justify-center col-span-2 w-full h-full bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
+                       <div onclick="display('0')" class="flex items-center justify-center col-span-2 w-full h-full bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
                            <span class="text-lightBlue-200 dark:text-darkBlue-250">0</span>
                        </div>
-                       <div class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
+                       <div onclick="display('.')" class="flex items-center justify-center w-12 h-12 bg-lightBlue-250 dark:bg-darkBlue-300 rounded-xl hover:bg-lightBlue-600 dark:hover:bg-darkBlue-550 cursor-pointer">
                            <span class="text-lightBlue-200 dark:text-darkBlue-250 h-10">.</span>
                        </div>
-                       <div class="flex items-center justify-center col-start-4 row-start-4 row-span-2 w-12 bg-lightBlue-400 dark:bg-darkBlue-450 rounded-xl hover:bg-lightBlue-700 dark:hover:bg-darkBlue-650 cursor-pointer">
+                       <div onclick="display('=')" class="flex items-center justify-center col-start-4 row-start-4 row-span-2 w-12 bg-lightBlue-400 dark:bg-darkBlue-450 rounded-xl hover:bg-lightBlue-700 dark:hover:bg-darkBlue-650 cursor-pointer">
                            <span class="text-lightBlue-450 dark:text-darkBlue-500">=</span>
                        </div>
                    </div>
