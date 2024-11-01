@@ -1,5 +1,10 @@
 const $ = document
 const toggleTheme = $.querySelector('.toggleTheme')
+let result = document.getElementById('result');
+
+
+let currentInput = '';
+
 
 toggleTheme.addEventListener('click', ()=>{
         if(localStorage.theme === 'dark'){
@@ -12,3 +17,7 @@ toggleTheme.addEventListener('click', ()=>{
 })
 
 
+function display(value) {
+    currentInput += value;
+    result.value = currentInput;
+}
