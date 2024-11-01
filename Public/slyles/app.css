@@ -633,16 +633,8 @@ video {
   height: 1rem;
 }
 
-.h-10{
-  height: 2.5rem;
-}
-
 .h-12{
   height: 3rem;
-}
-
-.h-20{
-  height: 5rem;
 }
 
 .h-32{
@@ -687,6 +679,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-96{
+  width: 24rem;
 }
 
 .cursor-pointer{
@@ -738,10 +734,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.border-none{
-  border-style: none;
-}
-
 .bg-circle-100{
   --tw-bg-opacity: 1;
   background-color: rgb(247 245 250 / var(--tw-bg-opacity));
@@ -772,21 +764,20 @@ video {
   background-color: rgb(26 172 255 / var(--tw-bg-opacity));
 }
 
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.bg-transparent{
+  background-color: transparent;
 }
 
 .p-7{
   padding: 1.75rem;
 }
 
-.pt-1\.5{
-  padding-top: 0.375rem;
-}
-
 .pb-3{
   padding-bottom: 0.75rem;
+}
+
+.pt-1\.5{
+  padding-top: 0.375rem;
 }
 
 .font-RobotoBold{
@@ -796,6 +787,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-gray-150{
+  --tw-text-opacity: 1;
+  color: rgb(120 136 149 / var(--tw-text-opacity));
 }
 
 .text-lightBlue-200{
@@ -813,15 +809,16 @@ video {
   color: rgb(152 246 255 / var(--tw-text-opacity));
 }
 
-.outline-none{
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
 .backdrop-blur-3xl{
   --tw-backdrop-blur: blur(64px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .hover\:bg-lightBlue-600:hover{
