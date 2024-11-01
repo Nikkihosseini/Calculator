@@ -588,6 +588,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }
@@ -668,6 +672,10 @@ video {
 
 .w-6{
   width: 1.5rem;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .grid-cols-4{
@@ -794,6 +802,14 @@ video {
 .text-lightBlue-350{
   --tw-text-opacity: 1;
   color: rgb(84 141 186 / var(--tw-text-opacity));
+}
+
+.dark\:block:is(.dark *){
+  display: block;
+}
+
+.dark\:hidden:is(.dark *){
+  display: none;
 }
 
 .dark\:bg-darkBlue-150:is(.dark *){
