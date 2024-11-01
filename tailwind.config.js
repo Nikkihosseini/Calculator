@@ -12,7 +12,7 @@ export const theme = {
     colors: {
         "lightBlue":{
           100 : "#daf0fe",
-          150 : "#a3c3dc",
+          150 : "#b9daf9",
           200 : '#edffff',
           250 : '#c5e2f4',
           300 : '#9cccf2', 
@@ -54,6 +54,10 @@ export const theme = {
     'lg': '1024px',
     'xl': '1280px',
   },
+    boxShadow: {
+      "equalShadow": 'inset 0 0 11px 1px rgba(152,246,255,1)',
+      "btnShadow": "inset 0 0 11px 1px rgba(250,254,255,1)",
+    },
 }
 };
 export const plugins = [
