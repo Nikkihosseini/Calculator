@@ -1,6 +1,7 @@
 const $ = document
 const toggleTheme = $.querySelector('.toggleTheme')
-let result = document.getElementById('result');
+let typeIng = $.getElementById('typeIng');
+const numBtn = $.querySelectorAll('.num-btn')
 
 
 let currentInput = '';
@@ -17,7 +18,14 @@ toggleTheme.addEventListener('click', ()=>{
 })
 
 
-function display(value) {
-    currentInput += value;
-    result.value = currentInput;
-}
+numBtn.forEach(item =>{
+    item.addEventListener('click', ()=>{
+        currentInput += item.innerHTML;
+        console.log(currentInput)
+        typeIng.innerHTML = currentInput;
+    })
+})
+
+
+
+
