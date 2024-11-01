@@ -641,6 +641,10 @@ video {
   height: 3rem;
 }
 
+.h-20{
+  height: 5rem;
+}
+
 .h-32{
   height: 8rem;
 }
@@ -734,6 +738,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.border-none{
+  border-style: none;
+}
+
 .bg-circle-100{
   --tw-bg-opacity: 1;
   background-color: rgb(247 245 250 / var(--tw-bg-opacity));
@@ -764,6 +772,11 @@ video {
   background-color: rgb(26 172 255 / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .p-7{
   padding: 1.75rem;
 }
@@ -790,6 +803,11 @@ video {
 .text-lightBlue-450{
   --tw-text-opacity: 1;
   color: rgb(152 246 255 / var(--tw-text-opacity));
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .backdrop-blur-3xl{
