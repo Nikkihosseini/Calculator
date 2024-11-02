@@ -64,8 +64,8 @@ clear.addEventListener('click', ()=>{
 })
 
 backSpace.addEventListener('click', ()=>{
-    typeIng.innerHTML = typeIng.innerHTML.slice(0, -1)
-    currentInput = typeIng.innerHTML.slice(0, -1)
+    typeIng.innerHTML = typeIng.innerText.slice(0, -1)
+    currentInput = typeIng.innerHTML
 })
 
 
