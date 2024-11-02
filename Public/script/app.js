@@ -5,7 +5,7 @@ const numBtn = $.querySelectorAll('.num-btn')
 const result =$.getElementById('result')
 const equal =$.getElementById('equal')
 const clear = $.getElementById('clear')
-
+const backSpace = $.getElementById('back-space')
 
 let currentInput = '';
 
@@ -63,7 +63,10 @@ clear.addEventListener('click', ()=>{
     typeIng.innerHTML = '';
 })
 
-
+backSpace.addEventListener('click', ()=>{
+    typeIng.innerHTML = typeIng.innerHTML.slice(0, -1)
+    currentInput = typeIng.innerHTML.slice(0, -1)
+})
 
 
 
