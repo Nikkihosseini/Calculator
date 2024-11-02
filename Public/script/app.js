@@ -27,6 +27,12 @@ function equalBtn(){
     let num1 = typeIng.innerHTML
     result.innerHTML =  eval(num1)
 }
+
+function backSpaceToClearAll(){
+    if(typeIng.innerHTML === ''){
+        result.innerHTML = '';
+    }
+}
 // **** Events **** //
 
 toggleTheme.addEventListener('click', ()=>{
@@ -76,9 +82,7 @@ window.addEventListener('keyup', (event)=>{
 
     }
 
-    if(typeIng.innerHTML === ''){
-        result.innerHTML = '';
-    }
+    backSpaceToClearAll()
 
     if(event.keyCode === 8){
         backSpace()
@@ -108,6 +112,7 @@ equal.addEventListener('click' , equalBtn)
 clear.addEventListener('click', deleteBtn)
 
 backSpaceBtn.addEventListener('click',backSpace)
+backSpaceBtn.addEventListener('click',backSpaceToClearAll)
 
 
 

@@ -792,6 +792,15 @@ video {
   padding: 1.75rem;
 }
 
+.p-4{
+  padding: 1rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pb-3{
   padding-bottom: 0.75rem;
 }
@@ -816,6 +825,11 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-lightBlue-200{
@@ -945,4 +959,10 @@ video {
 .dark\:hover\:bg-darkBlue-650:hover:is(.dark *){
   --tw-bg-opacity: 1;
   background-color: rgb(0 103 205 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:p-7{
+    padding: 1.75rem;
+  }
 }
