@@ -34,7 +34,15 @@ numBtn.forEach(item =>{
         console.log(currentInput)
         typeIng.innerHTML = currentInput;
     })
+    typeNums()
 })
+
+equal.addEventListener('click' , ()=>{
+    let num1 = typeIng.innerHTML
+    result.innerHTML =  eval(num1)
+    typeNums()
+})
+
 
 
 
