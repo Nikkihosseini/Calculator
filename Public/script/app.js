@@ -4,6 +4,8 @@ let typeIng = $.getElementById('typeIng');
 const numBtn = $.querySelectorAll('.num-btn')
 const result =$.getElementById('result')
 const equal =$.getElementById('equal')
+const clear = $.getElementById('clear')
+
 
 let currentInput = '';
 
@@ -28,6 +30,7 @@ function typeNums(){
     }
 }
 
+
 numBtn.forEach(item =>{
     item.addEventListener('click', ()=>{
         currentInput += item.innerHTML;
@@ -37,10 +40,27 @@ numBtn.forEach(item =>{
     typeNums()
 })
 
+numBtn.forEach(item =>{
+    item.addEventListener('keyup', ()=>{
+        currentInput += item.innerHTML;
+        console.log(currentInput)
+        typeIng.innerHTML = currentInput;
+    })
+    typeNums()
+})
+
+
+
 equal.addEventListener('click' , ()=>{
     let num1 = typeIng.innerHTML
     result.innerHTML =  eval(num1)
     typeNums()
+})
+
+clear.addEventListener('click', ()=>{
+    currentInput = '';
+    result.innerHTML = '';
+    typeIng.innerHTML = '';
 })
 
 
