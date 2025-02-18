@@ -7,7 +7,7 @@ export const darkMode = "class";
 export const theme = {
   extend: {
     fontFamily: {
-      "RobotoBold": "Roboto Bold",
+      "PopinsBold": "Poppins Bold",
     },
     colors: {
         "lightBlue":{

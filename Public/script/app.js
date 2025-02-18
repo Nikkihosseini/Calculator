@@ -75,12 +75,12 @@ window.addEventListener('keyup', (event)=>{
         case '.':
             currentInput += event.key;
             typeIng.innerHTML = currentInput;
-            break
+            break;
         case '=':
             equalBtn()
-            break
-
+            break;
     }
+
 
     backSpaceToClearAll()
 

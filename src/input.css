@@ -6,12 +6,11 @@
 
 @layer base{
     @font-face {
-        font-family: "Roboto Bold";
-        src: local("Roboto Bold") , url("../Public/fonts/Roboto/Roboto-Bold.ttf") format("ttf");
+        font-family: "Poppins Bold";
+        src: url("../Public/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+        font-weight: 800;
         font-display: swap;
     }
 }
 
-@layer components{
 
-}
